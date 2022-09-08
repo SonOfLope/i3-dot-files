@@ -193,7 +193,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # class                 border  bground text    indicator child_border
-client.focused          #FFAA01 #FFAA01 #F8F8F2 #FFAA01   #FFAA01
+client.focused          #de33de #de33de #F8F8F2 #de33de   #de33de
 client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
 client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
 client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
@@ -217,12 +217,6 @@ bindsym $mod+p exec flameshot gui
 bindsym Mod1+l exec --no-startup-id betterlockscreen --lock
 
 # Keyboard layout
-mode "$mode_change_lang" {
-bindcode 30 mode "default"; exec setxkbmap -layout us -option
-bindcode 31 mode "default"; exec setxkbmap -layout fr -option
-bindsym Escape mode "default"
-bindsym Return mode "default"
-
-}
-bindsym $mod+Control+space mode "$mode_change_lang"
+bindsym $mod+F1 exec setxkbmap us
+bindsym $mod+F2 exec setxkbmap ca
 
