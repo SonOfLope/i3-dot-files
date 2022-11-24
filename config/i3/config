@@ -201,7 +201,7 @@ client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 client.background       #F8F8F2
 
 # dmenu
-bindsym Control+space exec --no-startup-id j4-dmenu-desktop --dmenu "dmenu -i -nf '#F8F8F2' -nb '#282A36' -sb '#FFAA01' -sf '#F8F8F2' -fn 'monospace-10' -p '  '"
+bindsym Control+space exec --no-startup-id j4-dmenu-desktop --dmenu "dmenu -i -nf '#F8F8F2' -nb '#282A36' -sb '#44475A' -sf '#F8F8F2' -fn 'monospace-12' -p ' ┌∩┐(◣_◢)┌∩┐'"
 
 # Remove border and title
 for_window [class="^.*"] border pixel 3
@@ -211,10 +211,16 @@ gaps inner 10
 gaps outer 10
 
 # Flameshot
-bindsym $mod+p exec flameshot gui
+bindsym $mod+p exec --no-startup-id flameshot gui
+
+# Brave
+bindsym $mod+b exec brave-browser
 
 # i3lock
 bindsym Mod1+l exec --no-startup-id betterlockscreen --lock
+
+# Thunar file manager
+bindsym Mod1+f exec --no-startup-id thunar  
 
 # Keyboard layout
 bindsym $mod+F1 exec setxkbmap us
